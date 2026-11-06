@@ -6,78 +6,39 @@ window.addEventListener("load", function () {
 
 // Destination Search
 const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".place-card");
+const destinations = document.querySelectorAll(".destination-card");
 
 searchInput.addEventListener("input", function () {
 
-    let searchValue = searchInput.value.toLowerCase();
+    let value = searchInput.value.toLowerCase();
 
-    cards.forEach(function (card) {
+    destinations.forEach(function (place) {
 
-        let placeName = card.innerText.toLowerCase();
+        let name = place.innerText.toLowerCase();
 
-        if (placeName.includes(searchValue)) {
-            card.style.display = "block";
+        if (name.includes(value)) {
+            place.style.display = "block";
         } else {
-            card.style.display = "none";
+            place.style.display = "none";
         }
 
     });
 
 });
 
-// Contact Form
-const contactForm = document.getElementById("contactForm");
-
-contactForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-
-    if (name === "" || email === "" || message === "") {
-
-        alert("Please fill all the details!");
-
-    } else {
-
-        document.getElementById("formMessage").innerHTML =
-            "Thank you " + name + "! Your message has been received.";
-
-        contactForm.reset();
-
-    }
-
-});
-
 // Gallery Image Popup
-const images = document.querySelectorAll(".gallery img");
+const galleryImages = document.querySelectorAll(".gallery img");
 
-images.forEach(function (image) {
+galleryImages.forEach(function (image) {
 
     image.addEventListener("click", function () {
 
         const popup = document.createElement("div");
-
-        popup.style.position = "fixed";
-        popup.style.top = "0";
-        popup.style.left = "0";
-        popup.style.width = "100%";
-        popup.style.height = "100%";
-        popup.style.background = "rgba(0,0,0,0.9)";
-        popup.style.display = "flex";
-        popup.style.justifyContent = "center";
-        popup.style.alignItems = "center";
-        popup.style.zIndex = "9999";
+        popup.className = "image-popup";
 
         const bigImage = document.createElement("img");
-
         bigImage.src = image.src;
-        bigImage.style.maxWidth = "85%";
-        bigImage.style.maxHeight = "85%";
-        bigImage.style.borderRadius = "12px";
+        bigImage.alt = image.alt;
 
         popup.appendChild(bigImage);
         document.body.appendChild(popup);
@@ -90,31 +51,58 @@ images.forEach(function (image) {
 
 });
 
-// Back To Top Button
-const topButton = document.createElement("button");
+// Contact Form
+const contactForm = document.getElementById("contactForm");
 
-topButton.innerHTML = "↑";
-topButton.id = "topButton";
+contactForm.addEventListener("submit", function (event) {
 
-document.body.appendChild(topButton);
+    event.preventDefault();
 
-window.addEventListener("scroll", function () {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    if (window.scrollY > 300) {
-        topButton.style.display = "block";
+    if (name === "" || email === "" || message === "") {
+
+        alert("Please fill in all the details!");
+
     } else {
-        topButton.style.display = "none";
+
+        document.getElementById("formMessage").innerText =
+            "Thank you, " + name + "! Your message has been received.";
+
+        contactForm.reset();
+
     }
 
 });
 
-topButton.addEventListener("click", function () {
+// Destination Card Animation
+const cards = document.querySelectorAll(".destination-card");
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+cards.forEach(function (card) {
+
+    card.addEventListener("mouseenter", function () {
+        card.style.cursor = "pointer";
     });
 
 });
 
-console.log("Explore Karnataka Website Loaded Successfully!");
+// Smooth Scroll
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(function (item) {
+            item.style.color = "#ddd";
+        });
+
+        link.style.color = "#d5ad62";
+
+    });
+
+});
+
+console.log("Explore Karnataka is ready!");

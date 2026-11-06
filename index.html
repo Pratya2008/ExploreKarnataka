@@ -1,213 +1,295 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Explore Karnataka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Karnataka | Discover More</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
     <header>
-        <h1>EXPLORE KARNATAKA</h1>
+        <div class="logo">KARNATAKA<span>.</span></div>
 
         <nav>
             <a href="#home">Home</a>
-            <a href="#places">Tourist Places</a>
-            <a href="#history">History</a>
-            <a href="#food">Food</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#heritage">Heritage</a>
+            <a href="#food">Cuisine</a>
             <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
         </nav>
+
+        <a href="#contact" class="nav-btn">Let's Explore ↗</a>
     </header>
 
-    <!-- Home Section -->
+    <!-- Hero -->
     <section class="hero" id="home">
+
         <div class="hero-content">
-            <h2>DISCOVER THE BEAUTY OF KARNATAKA</h2>
-            <p>Explore beautiful mountains, waterfalls, history and culture.</p>
-            <a href="#places" class="btn">Explore Now</a>
+            <p class="small-heading">WELCOME TO SOUTH INDIA</p>
+
+            <h1>WHERE EVERY<br>
+                JOURNEY TELLS<br>
+                A <span>STORY.</span>
+            </h1>
+
+            <p class="hero-text">
+                From ancient kingdoms to misty mountains,
+                discover the unforgettable beauty of Karnataka.
+            </p>
+
+            <a href="#destinations" class="main-btn">
+                DISCOVER KARNATAKA ↗
+            </a>
         </div>
+
+        <div class="hero-bottom">
+            <span>15°19' N — 76°27' E</span>
+            <span>THE LAND OF MANY WORLDS</span>
+            <span>EST. EXPLORATION 2026</span>
+        </div>
+
     </section>
 
     <!-- Introduction -->
-    <section class="intro">
-        <h2>Welcome to Karnataka</h2>
-        <p>
-            Karnataka is a beautiful state in South India.
-            It is famous for its historical monuments, beautiful
-            waterfalls, green hill stations, beaches and delicious food.
-            It is a perfect destination for travellers and nature lovers.
-        </p>
+    <section class="about">
+        <div class="about-left">
+            <p class="section-label">01 — THE EXPERIENCE</p>
+            <h2>More than a destination.<br>
+                It's a <span>feeling.</span>
+            </h2>
+        </div>
+
+        <div class="about-right">
+            <p>
+                Karnataka is a land where history meets modern life.
+                Explore royal palaces, ancient temples, beautiful
+                beaches, green forests and breathtaking hill stations.
+                Every corner has something unique to offer.
+            </p>
+        </div>
     </section>
 
-    <!-- Tourist Places -->
-    <section id="places">
-        <h2>Famous Tourist Places</h2>
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
 
-        <div class="search-box">
+        <div class="section-heading">
+            <div>
+                <p class="section-label">02 — EXPLORE THE STATE</p>
+                <h2>Places worth <span>remembering.</span></h2>
+            </div>
+
             <input type="text" id="searchInput"
-            placeholder="Search your favourite destination...">
+            placeholder="Search destinations...">
         </div>
 
-        <div class="cards">
+        <div class="destination-grid">
 
-            <div class="place-card">
-                <img src="mysore.jpg" alt="Mysore Palace">
-                <h3>Mysore Palace</h3>
-                <p>A beautiful royal palace known for its architecture and history.</p>
+            <div class="destination-card">
+                <img src="mysore.jpg"
+                alt="Mysore Palace">
+
+                <div class="destination-info">
+                    <p>ROYAL HERITAGE</p>
+                    <h3>Mysore Palace</h3>
+                    <span>Karnataka, India</span>
+                </div>
             </div>
 
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600" alt="Hampi">
-                <h3>Hampi</h3>
-                <p>Explore ancient temples and the historical ruins of Hampi.</p>
+            <div class="destination-card">
+                <img src="images (2).jpg"
+                alt="Hampi">
+
+                <div class="destination-info">
+                    <p>ANCIENT KINGDOM</p>
+                    <h3>Hampi</h3>
+                    <span>Vijayanagara</span>
+                </div>
             </div>
 
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=600" alt="Coorg">
-                <h3>Coorg</h3>
-                <p>Enjoy coffee plantations, greenery and peaceful landscapes.</p>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=700"
+                alt="Coorg">
+
+                <div class="destination-info">
+                    <p>THE GREEN PARADISE</p>
+                    <h3>Coorg</h3>
+                    <span>Kodagu</span>
+                </div>
             </div>
 
-        </div>
-    </section>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=700"
+                alt="Waterfall">
 
-    <!-- Historical Places -->
-    <section id="history" class="history">
-        <h2>Historical Places</h2>
-
-        <div class="cards">
-
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=600" alt="Badami">
-                <h3>Badami Caves</h3>
-                <p>Famous for ancient rock-cut caves and beautiful architecture.</p>
+                <div class="destination-info">
+                    <p>NATURE'S POWER</p>
+                    <h3>Jog Falls</h3>
+                    <span>Shivamogga</span>
+                </div>
             </div>
 
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=600" alt="Belur">
-                <h3>Belur Temple</h3>
-                <p>Known for its detailed stone carvings and temple architecture.</p>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700"
+                alt="Chikmagalur">
+
+                <div class="destination-info">
+                    <p>MOUNTAIN ESCAPE</p>
+                    <h3>Chikmagalur</h3>
+                    <span>Western Ghats</span>
+                </div>
             </div>
 
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600" alt="Gol Gumbaz">
-                <h3>Gol Gumbaz</h3>
-                <p>A famous historical monument located in Vijayapura.</p>
-            </div>
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=700"
+                alt="Karnataka beach">
 
-        </div>
-    </section>
-
-    <!-- Waterfalls and Hill Stations -->
-    <section id="nature">
-        <h2>Waterfalls & Hill Stations</h2>
-
-        <div class="cards">
-
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600" alt="Jog Falls">
-                <h3>Jog Falls</h3>
-                <p>One of India's famous waterfalls surrounded by nature.</p>
-            </div>
-
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600" alt="Chikmagalur">
-                <h3>Chikmagalur</h3>
-                <p>A beautiful hill station famous for coffee estates and hills.</p>
-            </div>
-
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Nature">
-                <h3>Agumbe</h3>
-                <p>Known for green forests, beautiful views and heavy rainfall.</p>
+                <div class="destination-info">
+                    <p>COASTAL BEAUTY</p>
+                    <h3>Gokarna</h3>
+                    <span>Uttara Kannada</span>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Famous Food -->
-    <section id="food" class="food">
-        <h2>Famous Karnataka Foods</h2>
+    <!-- Heritage -->
+    <section class="heritage" id="heritage">
 
-        <div class="cards">
+        <div class="heritage-image">
+            <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1000"
+            alt="Indian historical architecture">
+        </div>
 
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600" alt="Dosa">
+        <div class="heritage-content">
+            <p class="section-label">03 — STORIES OF THE PAST</p>
+
+            <h2>Walk through<br>
+                <span>history.</span>
+            </h2>
+
+            <p>
+                Discover the magnificent architecture and rich
+                history of Karnataka. From the ancient caves of
+                Badami to the magnificent temples of Belur,
+                every monument has a story.
+            </p>
+
+            <ul>
+                <li>01. Badami Cave Temples</li>
+                <li>02. Belur Chennakesava Temple</li>
+                <li>03. Gol Gumbaz, Vijayapura</li>
+                <li>04. Hampi World Heritage Site</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Food -->
+    <section class="food" id="food">
+
+        <p class="section-label">04 — TASTE OF KARNATAKA</p>
+        <h2>A journey for <span>your taste buds.</span></h2>
+
+        <div class="food-grid">
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600"
+                alt="South Indian dosa">
                 <h3>Mysore Masala Dosa</h3>
-                <p>A popular crispy dosa with spicy chutney and potato filling.</p>
+                <p>A crispy South Indian favourite.</p>
             </div>
 
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600" alt="Idli">
-                <h3>Idli Vada</h3>
-                <p>A traditional breakfast served with chutney and sambar.</p>
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600"
+                alt="Indian breakfast">
+                <h3>Idli & Vada</h3>
+                <p>A classic Karnataka breakfast.</p>
             </div>
 
-            <div class="place-card">
-                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600" alt="Bisi Bele Bath">
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600"
+                alt="Indian curry">
                 <h3>Bisi Bele Bath</h3>
-                <p>A delicious traditional rice dish with lentils and spices.</p>
+                <p>A traditional rice and lentil dish.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Travel -->
+    <section class="travel">
+        <p class="section-label">05 — PLAN YOUR JOURNEY</p>
+        <h2>Your journey, <span>your way.</span></h2>
+
+        <div class="travel-grid">
+
+            <div>
+                <h3>✈ BY AIR</h3>
+                <p>Reach Karnataka through airports in Bengaluru, Mangaluru and other cities.</p>
+            </div>
+
+            <div>
+                <h3>🚆 BY RAIL</h3>
+                <p>Explore the state through its extensive railway network.</p>
+            </div>
+
+            <div>
+                <h3>🚗 BY ROAD</h3>
+                <p>Enjoy scenic road trips connecting cities, beaches and hills.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- Image Gallery -->
-    <section id="gallery">
-        <h2>Beautiful Karnataka Gallery</h2>
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+        <p class="section-label">06 — MOMENTS & MEMORIES</p>
+        <h2>Captured <span>beauty.</span></h2>
 
         <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600" alt="Beach">
-            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600" alt="Mountain">
-            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600" alt="Waterfall">
-            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=600" alt="Forest">
-        </div>
-    </section>
-
-    <!-- Travel Information -->
-    <section class="travel">
-        <h2>Travel Information</h2>
-
-        <div class="travel-info">
-            <div>
-                <h3>🚆 By Train</h3>
-                <p>Karnataka has a wide railway network connecting major cities.</p>
-            </div>
-
-            <div>
-                <h3>✈️ By Air</h3>
-                <p>Bengaluru and other cities have airports for easy travel.</p>
-            </div>
-
-            <div>
-                <h3>🚌 By Road</h3>
-                <p>Government and private buses connect many tourist destinations.</p>
-            </div>
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=700" alt="Forest">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700" alt="Landscape">
+            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=700" alt="Waterfall">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700" alt="Mountain">
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Want to explore Karnataka? Send us a message!</p>
+    <section class="contact" id="contact">
+
+        <p class="section-label">07 — GET IN TOUCH</p>
+        <h2>Let's plan your <span>next adventure.</span></h2>
 
         <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+
+            <input type="text" id="name"
+            placeholder="Your Name" required>
+
+            <input type="email" id="email"
+            placeholder="Your Email" required>
+
+            <textarea id="message"
+            placeholder="Your Message" required></textarea>
+
+            <button type="submit">SEND MESSAGE ↗</button>
+
         </form>
 
         <p id="formMessage"></p>
+
     </section>
 
     <!-- Footer -->
     <footer>
-        <h2>EXPLORE KARNATAKA</h2>
-        <p>One State, Many Wonders.</p>
-        <p>2026 Explore Karnataka. All Rights Reserved.</p>
+        <h2>KARNATAKA<span>.</span></h2>
+        <p>ONE STATE. MANY WORLDS. ENDLESS STORIES.</p>
+        <p>2026 Explore Karnataka | All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
