@@ -1,0 +1,330 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7f2;
+    color: #263b30;
+}
+
+/* Header */
+header {
+    background-color: #173d2c;
+    color: white;
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b8e994;
+}
+
+/* Hero Section */
+.hero {
+    height: 500px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1400");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #a3c957;
+    color: #173d2c;
+    padding: 14px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* General Sections */
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #20543a;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 80%;
+    max-width: 500px;
+    padding: 14px;
+    border: 1px solid #b7c9b8;
+    border-radius: 25px;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Destination Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.place-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+}
+
+.place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.place-card h3 {
+    color: #236341;
+    margin: 18px 0 10px;
+}
+
+.place-card p {
+    padding: 0 18px;
+    line-height: 1.6;
+}
+
+/* Historical Section */
+.history {
+    background-color: #e9eee5;
+}
+
+/* Food Section */
+.food {
+    background-color: #e9eee5;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Travel Information */
+.travel {
+    background-color: #e9eee5;
+}
+
+.travel-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.travel-info div {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.travel-info h3 {
+    color: #236341;
+    margin-bottom: 15px;
+}
+
+.travel-info p {
+    line-height: 1.6;
+}
+
+/* Contact */
+.contact {
+    background-color: #e9eee5;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 14px;
+    border: 1px solid #b7c9b8;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #20543a;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #387b50;
+}
+
+#formMessage {
+    margin-top: 20px;
+    color: #20543a;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #173d2c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+/* Back To Top */
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #20543a;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .place-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+}
